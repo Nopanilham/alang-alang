@@ -1,0 +1,29 @@
+.rating {
+    display: inline-block;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin: 0 2px;
+    font-size: 25px;
+    color: #ccc;
+}
+
+.rating label:before {
+    content: "\f005";
+    /* Unicode untuk bintang kosong */
+    font-family: "Font Awesome 5 Free";
+}
+
+.rating input:checked~label:before {
+    content: "\f005";
+    /* Unicode untuk bintang diisi */
+    color: #ffc107;
+    /* Warna yang diisi untuk bintang yang dipilih */
+}
